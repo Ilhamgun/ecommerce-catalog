@@ -1,35 +1,61 @@
-# rakamin-project
+# 🛍️ E-Commerce Catalog
 
-This template should help get you started developing with Vue 3 in Vite.
+A simple and interactive e-commerce product catalog built using Vue.js. This application fetches product data from the [Fake Store API](https://fakestoreapi.com/) and displays one product at a time. It focuses on showcasing **men's** and **women's clothing**, with the ability to switch between products.
 
-## Recommended IDE Setup
+## 🔍 Features
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Dynamic product display using Vue.js.
+- Integration with [Fake Store API](https://fakestoreapi.com/).
+- Styled display for men's and women's clothing with category-based background.
+- Loading indicator while fetching data.
+- Responsive design for mobile and desktop.
+- Graceful fallback for unsupported product categories.
 
-## Customize configuration
+## 🛠️ Technologies Used
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- **Vue.js 3**
+- **CSS3**
+- **HTML5**
+- **Fake Store API**
 
-## Project Setup
+## 🚀 Getting Started
 
+To run this project locally, follow these steps:
+
+### 1. Clone the repository
+
+```sh
+git clone https://github.com/your-username/ecommerce-catalog.git
+```
+
+```sh
+cd ecommerce-catalog
+```
+
+### 2. Install dependencies
+Make sure you have Node.js installed.
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
-
+### 3. Run the development server
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### 4. Open in browser
+Visit http://localhost:5173 in your browser to view the app.
 
-```sh
-npm run build
-```
+## 💡 How It Works
+The app loads a product using its ID from the Fake Store API.
 
-### Lint with [ESLint](https://eslint.org/)
+Only products in the categories men's clothing and women's clothing are displayed with full styling.
 
-```sh
-npm run lint
-```
+Products outside of those categories show an "Unavailable" screen.
+
+Users can click "Next product" to cycle through products (1–20).
+
+📦 API Reference
+Endpoint: https://fakestoreapi.com/products/:id
+
+Example: https://fakestoreapi.com/products/5
