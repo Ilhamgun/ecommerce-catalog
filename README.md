@@ -25,7 +25,7 @@ To run this project locally, follow these steps:
 ### 1. Clone the repository
 
 ```sh
-git clone https://github.com/your-username/ecommerce-catalog.git
+git clone https://github.com/Ilhamgun/ecommerce-catalog.git
 ```
 
 ```sh
@@ -47,6 +47,7 @@ npm run dev
 Visit http://localhost:5173 in your browser to view the app.
 
 ## 💡 How It Works
+
 The app loads a product using its ID from the Fake Store API.
 
 Only products in the categories men's clothing and women's clothing are displayed with full styling.
@@ -55,7 +56,8 @@ Products outside of those categories show an "Unavailable" screen.
 
 Users can click "Next product" to cycle through products (1–20).
 
-📦 API Reference
+## 📦 API Reference
+
 Endpoint: https://fakestoreapi.com/products/:id
 
 Example: https://fakestoreapi.com/products/5
